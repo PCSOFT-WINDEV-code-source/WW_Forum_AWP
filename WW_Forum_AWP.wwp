@@ -1,0 +1,360 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WW_Forum_AWP
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : ""
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : CAAAAAgAAAAwZjPuQQxAOzPLI/ccyDnv3DceqCso5bU7yLReM8/4LVetdb3weTQM9Nc9+o4MjP3IlHHieq99KkbB1fBAC69GvX7AYuk4ACIkqFOElhsb1/L+v+8OjzxKd6/IOJSy7OCLMArt3rc7AF/7Q9ZWkis2nUJajakMDQIBRqUjPqXiv3LmvGKSKrIPFwrtqbYXoWMWgcKiizh/acaikFhm3Rt4hITtbSFiIqauXmdZCuwtDb5AnA0MqBAmE3glySF1FZc0OM4/i45+hdmEVUMus22Awhs1ZYnEUkqSUbYrvD/0dn5aUhSY/ITqEm3jNfckcfrXXNsLoozjzQW4jxMJiw9n5ob+G4pnz/o8VGL4hKiyvPYnKBatDNDvCZxvNvkYBp7YlkRXTe9PvqpfpJpfGv9G93rOVfJxG7Br8BSof8qzz9rJyTsJA/mvYONybpys/pDQG9oOthrdKXwGkFKe6aOEUIz4UPeJWHslzGX0FUV3X4Wslzmomv20e9QqxoqQ0XCdVCxsIiXg8i8rdZEMKdWETasHC2Nqj/EARj+XldIGWR3Sq4fxk40RSWCcX0rQ6K1YeRZZ0MS16xjTUUe672qAKaPc/FuuKOtzEk44V6d6gAhR95uf4Z3T9z+t4JRF/fnnN5wHzfd3irv0t55tUt5ykFN/JxLJnKv3jp7U4D0PX2ASml7sNrKhojPkqB7nzsUKUxct2kGHuVgdzUXfS5NCmMx3ysVvoHV+ziu7w1bx0UNVg+tMy8xQpRQhkpV4nXgkzIHkVrJhe2AClNyA1nfBILJtF7jXSmKmomuZ6MLa+TF5ZMQ7mzdcwxjXqIoN5CTtV4Qogiqyb9tA/mNQXVV2MI3BmPWLnQJMXgBhlBvtItfw4K4QpwvFa2fDc37tK4h8RZ6EleE1IPcN3j80TdzYsdjzumH70JqLIbbDz0mn6t5V/QqWTCbFJbrR7aZEAi3mXu53JmjOWHCqgFcXii+Q5KFW7Kk+GYAxaX7AY1DVRpghK2yWNEhNP3rwlAfvbQiVBCJbNBrdgd0O4akKbb0ftbN5DXC7F34UuVfiiaUMbdmLuQ+Ls0h3zUQUOUf22IHLdMvFmp+AwBeI0JXPu4IwRvizIBKS6yutdoAYMQ8vqLDk5H4d/wu0wU32InoDUJBzX+kNOkAjuD70n5RY7DnWbbgCqrkQCWIdjz054gfeMOQdLMyncSfL8H4K2QF2Yav3Vo20uNsP8Qlwc3QjbkRb/NwjYT6WQophXs9IhmYIeXtK1Qr6XEhFvmbiJxUPKzSbvMMujqM5/1chnMKHKifSw/fxBBx0igKthaVjg8QHsvEupTZkg4QKf//Oi4YODHaGxgyZPvH+SXqel2md+lH2le32vYwaihJjmLMjJwv+WTbyFmbFJkXg39kY48UmzON2ttpQTb9qaE1SNqXkb4pH7TmcM3wo7rSSmjtKBbbpklp1NI8BWEwQXq37smwqD/C3sEssS7duCeFEHj2jirGQDp7xtrkGhv6HhH+36C3BasVNeqQzEP4xIqJeZdqIWTxVPQMN/yIfM6y7chg1L5slP9Eeg1Zi5tLOAUhP0YGKCUo6Hn58Y0fPiW7YElV+1FhoLML1z6e+EimqxA6Nw2wFWjBTkM2QdHxHxxXV5AiTfQNvTZHmAiQxOWvcEAclrhEdS4esA4TQ/K3sRvFJ7oXyHGORWncyw8MNYt7rtQTvoQxAMYHgWML3riXClw3Tv+4ADgKnJjEFkh6HMkBjqSSKWbfdO2IZpnFvf8B0TdQPHq+1gMpbhQ04shKDXbTAEg8iReqVrdrOUfTpEM+cUlE18nd4iYwOESBskvFl5P8guUnidFP+adWbKgR/2HYsChoj0oC4ffgGgenVDrgvTJOO/5lt8cuLQ6c6gP2oHGcx4yFnEsfaYAFhBXpEwtAcStWBXwofQ3KAhRd/eyuJ7qLU0Sa/Dn55mngW
+ configurations :
+  -
+    name : Site
+    internal_properties : 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
+    configuration_id : 14368006244224195148
+    type : 2
+    generation_name : WW_Forum_AWP.wdl
+    version : {}
+    index_page_generation_name : accueil
+    language : 1
+    64bits : true
+ elements :
+  identifier : 0x43995cb60002b65a
+  elements :
+   -
+     name : connexion
+     identifier : 0x439afc8c02c70e3b
+     internal_properties : CAAAAAgAAADz9JDXjDagi9HNiOfzTwd6adK6977XtRusRNPxQ8xdu0KtzKAAcRvmzTny/0taRt2VlVML9ZpVTA0rwdB4x55VHadplW8=
+     physical_name : .\connexion.wwh
+     type : 65538
+     report :
+      fr-FR : FR
+   -
+     name : animations
+     identifier : 0x439ab68502af829a
+     internal_properties : CAAAAAgAAACwjug086gAGyfgxA/Tw4X3Zku1VXuOHNSCPq6osE9N69nFlf2xERT2hLslkxPNtSuVnQ==
+     physical_name : .\animations.wwn
+     type : 65539
+   -
+     name : COL_Préférences
+     identifier : 0x439ab428018b48c5
+     internal_properties : CAAAAAgAAAAZdcHF4l/X2OavjeEValQrUc5kBLaRQmG2NQIUCuUp/zHjIChc5dMxw3pkXCTcpBT8BA==
+     physical_name : .\COL_Préférences.wdg
+     type : 7
+   -
+     name : accueil
+     identifier : 0x439afd5702c927d3
+     internal_properties : CAAAAAgAAACko84L+wMewgchkLwYp4zPyAofJlq2kUKFw6bCVBWP8pdZ1+siNIWXy9QULpxZOwP+i0Q1x/5lhoe2okigRHP8O0inXA==
+     physical_name : .\accueil.wwh
+     type : 65538
+     report :
+      fr-FR : FR
+   -
+     name : forum
+     identifier : 0x439b281502e81b78
+     internal_properties : CAAAAAgAAABDvmiQh3L4o1lRn+T/kt0m5v5P/JeTgDhLNDxwmCoRSiVEpmN4OylL4nzobxYJJSPadZlGJdO1xcWIjMqRYcEeSbG/
+     physical_name : .\forum.wwh
+     type : 65538
+     report :
+      fr-FR : FR
+   -
+     name : PAGEMOD_Main
+     identifier : 0x439aadce00167956
+     internal_properties : CAAAAAgAAAAFAW2xjiuDnKqTircCU6cSbQw0LJzv9ciKWLGtsU7MFCzkTK1mkrwl9y6oEJBAOKgQEA==
+     physical_name : .\PAGEMOD_Main.wwt
+     type : 65541
+   -
+     name : COL_Droits
+     identifier : 0x4399cc210014f018
+     internal_properties : CAAAAAgAAAAvKYWBUm+vWBqM2e7oXmdOFxvAvqeopMFKIPM+ELTZuQ1dP0bcnBsGogLdmoVl0jkq
+     physical_name : .\COL_Droits.wdg
+     type : 7
+   -
+     name : sujet
+     identifier : 0x439eae5a0022e33e
+     internal_properties : CAAAAAgAAABXyhRMYx5k/42V0ygDVmHqQsKz8JunpCyXGTu0qlJG+fypYLDS5hp+/9i0Wzr1MS/GWfX6cY9peYnMQB4txWVCbV3T
+     physical_name : .\sujet.wwh
+     type : 65538
+     report :
+      fr-FR : FR
+   -
+     name : COL_Outils
+     identifier : 0x439ee67206c30015
+     internal_properties : CAAAAAgAAAAJBXEVks9nCNbjR6s2xuo9a3oyOpLlxSZSOmOrt0jCFibedZsV6Wmlc6oU7LQs1MQMFA==
+     physical_name : .\COL_Outils.wdg
+     type : 7
+   -
+     name : recherche
+     identifier : 0x439f0d2f07525421
+     internal_properties : CAAAAAgAAACBgCvuWLhhpZpK/8ejzhu2+TvUXQeLRMXIrXqurvimOjb3AGKnhr68mQa/eyGkdji1wnMG8JX+IWLRTeUF785ZliOKeQ==
+     physical_name : .\recherche.wwh
+     type : 65538
+     report :
+      fr-FR : FR
+   -
+     name : REQ_Forums
+     identifier : 0x439f17f9075478e0
+     internal_properties : CAAAAAgAAAAUcny4B3w0N4NhA3Vu9iN5dmt15V/feqFOxyrt3NfFE9EN8/VuWeAv8FdBv0e5QbcBAQ==
+     physical_name : .\REQ_Forums.WDR
+     type : 5
+   -
+     name : REQ_NbSujetsDansForum
+     identifier : 0x439f195f0756eff3
+     internal_properties : CAAAAAgAAACJhfGVEk/niFZkBFqZs3dJvThEFCxsbg+qkHqgjwQW4h7SwzwbNNsu8yqUbDSsVESMlA==
+     physical_name : .\REQ_NbSujetsDansForum.WDR
+     type : 5
+   -
+     name : REQ_NbMessagesDansForum
+     identifier : 0x439f1c53075875f4
+     internal_properties : CAAAAAgAAADMSiRwz/S87/uJAGMoXMzdfsOtDcf/EkNOR9MJkAOJb1W5e4rdKvk3yH95R88B+e/ZWQ==
+     physical_name : .\REQ_NbMessagesDansForum.WDR
+     type : 5
+   -
+     name : REQ_DernierMessage
+     identifier : 0x439f1d5c075a8408
+     internal_properties : CAAAAAgAAACIhvCsG0Do8//dVaS+9MXbjJOLQ+9XVbRKSM0IlQ6OCvI8rFj9AsoLnIN9ezu1TUONlQ==
+     physical_name : .\REQ_DernierMessage.WDR
+     type : 5
+   -
+     name : REQ_Sujets
+     identifier : 0x43a04214075cebc6
+     internal_properties : CAAAAAgAAACIhvCsG0Do8//enJpg6CID7vPdnbcwkAtKbID6EGOpb1WZza6tGjoMnIN9ezu1TUONlQ==
+     physical_name : .\REQ_Sujets.WDR
+     type : 5
+   -
+     name : REQ_NbMessagesDansSujet
+     identifier : 0x43a044d2075ea593
+     internal_properties : CAAAAAgAAAApJRF1su/H6PbFkacTxQXtNbYwoIJj4WSitl0oaAsL1RPJ6E0CzTUPk4p0TNQM9OQsNA==
+     physical_name : .\REQ_NbMessagesDansSujet.WDR
+     type : 5
+   -
+     name : REQ_Messages
+     identifier : 0x43a0563e0034b483
+     internal_properties : CAAAAAgAAABr51O3dDF5oqxPEXUyIcDhHUoQMPaveRmqYMSSnhUBP8lLVm7HMe19DTSuCopGMqZu9g==
+     physical_name : .\REQ_Messages.WDR
+     type : 5
+   -
+     name : REQ_NbMessagesUtilisateur
+     identifier : 0x43a14fec0037046a
+     internal_properties : CAAAAAgAAAACeHquHUri/UUpabK9/4XdIJefl5M9joKiJo36JW6mGurEpm60TABbJh2HcTGvS70HDw==
+     physical_name : .\REQ_NbMessagesUtilisateur.WDR
+     type : 5
+   -
+     name : inscription
+     identifier : 0x43a1a821003b9126
+     internal_properties : CAAAAAgAAABFBiZJJlgaHRt/In1dJRlsS/TASShhY4jrjS7kJRVp9vGHsTbkqUhVJaFS3WsU1G8HB93xE4Q7sqe1W34uMTTvtzn7A/0=
+     physical_name : .\inscription.wwh
+     type : 65538
+     report :
+      fr-FR : FR
+   -
+     name : MDLC_Edition
+     identifier : 0x43a4492e0094cb9b
+     internal_properties : CAAAAAgAAAAVcX2hHnszbHoNYpuyUQX3Axw+zgQHFb9W3dYA0l0xh71zKhFwiBZnR/74wECwSLgAAA==
+     physical_name : .\MDLC_Edition.wwt
+     type : 65543
+   -
+     name : COL_Pièces_Jointes
+     identifier : 0x440820b6003ff1ac
+     internal_properties : CAAAAAgAAADGTC5yse7G6fYqaKoZW/D1AiVBkS0wIHSi5vvb5TraJsJ4MLGNs8Nhj4lzTdUL9+nTUw==
+     physical_name : .\COL_Pièces_Jointes.wdg
+     type : 7
+   -
+     name : profil
+     identifier : 0x4408250e0041e83a
+     internal_properties : CAAAAAgAAADsWxazs7aPKuhVDojhfsVpaVxD8K21n3VYezgsSjisQbMRfUmilzOV0pfD8HsiyYyVcE05Dz0H52b3T17yb7tE4/DflA==
+     physical_name : .\profil.wwh
+     type : 65538
+     report :
+      fr-FR : FR
+   -
+     name : REQ_Utilisateur_Sujet_Plus_Actif
+     identifier : 0x44648cc80044968d
+     internal_properties : CAAAAAgAAADzTyt/zLnxKjXZP7cEQ/6TEUy4uJHtpq2Ou8iMdDDibkpGKW3QMJgwUsw2ggL++u7WXg==
+     physical_name : .\REQ_Utilisateur_Sujet_Plus_Actif.WDR
+     type : 5
+   -
+     name : REQ_Utilisateur_Forum_Plus_Actif
+     identifier : 0x44648b930042dee2
+     internal_properties : CAAAAAgAAACsqoSQL1Tcj1jsRWltsv0ztjkFha5akXZSqt+sBp5+WuYU8mzVI7DHJR+ZZy+hWU+5uQ==
+     physical_name : .\REQ_Utilisateur_Forum_Plus_Actif.WDR
+     type : 5
+   -
+     name : COL_Utilisateurs
+     identifier : 0x4464b6dd0049f9a6
+     internal_properties : CAAAAAgAAAADf3uvHEnh+kXpeeRwnCNG6YiQyAhL9y2CXk3BjWIw+DDggPldo6rAIhyGcjKuSr4GDg==
+     physical_name : .\COL_Utilisateurs.wdg
+     type : 7
+   -
+     name : administration
+     identifier : 0x4464e92b004878d7
+     internal_properties : CAAAAAgAAAAP0PQz6DKsh5353AsH41suDbYWOwLLxqYdl0FaWw/KkaXTtBYjrs0bcCs8qzkuMsnhWa+vUUb58OF/lQS0u6JZAYNNsUM=
+     physical_name : .\administration.wwh
+     type : 65538
+     report :
+      fr-FR : FR
+   -
+     name : REQ_Recherche
+     identifier : 0x446b6ce4004aa734
+     internal_properties : CAAAAAgAAABQroiUE0jg+0QfMBBbEG55BnllNQ5ZmN+qoBEbLlbGMo5shJOmEoLKIRuFczOtVUu1vQ==
+     physical_name : .\REQ_Recherche.WDR
+     type : 5
+  other_elements : []
+  analysis : .\WW_Forum_AWP.ana\WW_Forum_AWP.wda
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ common_generation_directory : true
+ wb_skin : 190 Evolution
+ wb_color_palette : BlueVolution
+ site_type : 3
+ languages :
+  - fr-FR
+ site_map :
+  roots :
+   -
+     name : accueil
+     parameters : []
+     title :
+      fr-FR : Accueil
+     description :
+      fr-FR : Accueil
+     children : []
+   -
+     name : recherche
+     parameters :
+      -
+        name : P1
+        prototype_parameter : true
+     title :
+      fr-FR : Résultats de la recherche
+     description :
+      fr-FR : recherche
+     children : []
+  orphans :
+   -
+     name : accueil
+     parameters : []
+     title :
+      fr-FR : Accueil
+     description :
+      fr-FR : Accueil
+   -
+     name : accueil
+     parameters : []
+     title :
+      fr-FR : accueil
+     description :
+      fr-FR : accueil
+   -
+     name : administration
+     parameters : []
+     title :
+      fr-FR : administration
+     description :
+      fr-FR : administration
+   -
+     name : connexion
+     parameters : []
+     title :
+      fr-FR : connexion
+     description :
+      fr-FR : connexion
+   -
+     name : forum
+     parameters : []
+     title :
+      fr-FR : forum
+     description :
+      fr-FR : forum
+   -
+     name : inscription
+     parameters : []
+     title :
+      fr-FR : Inscription
+     description :
+      fr-FR : Inscription
+   -
+     name : profil
+     parameters : []
+     title :
+      fr-FR : Profil
+     description :
+      fr-FR : Profil
+   -
+     name : recherche
+     parameters : []
+     title :
+      fr-FR : recherche
+     description :
+      fr-FR : recherche
+   -
+     name : sujet
+     parameters : []
+     title :
+      fr-FR : topic
+     description :
+      fr-FR : topic
+ url_rewriting :
+  internal_properties : CAAAAAgAAADkPzcUdUUS7wCiun+MCjqYH70RJdzkSv/nRvXZ3ENdikMa6bcHtsAH
+ code_elements :
+  internal_properties : CAAAAAgAAAAcyl8sH/VwdnOE6OjBivqcsjUC0KiA8zKqQHkhG95Gg1TIYkGrXf4S8yl8NKyX/wQpF04rAKha/+Z4Nsv+jjyJmA==
+  type_code : 0
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAA7mXHQ8O3A/ICLy/P+BMVIZhB1a8dE/5X3GbLxudWVcmclhCAj459XBg3Eltbswo8n/SvYl/d9HogZDRFVSvAjj3MRlgVcECmBaZsAXJyhQLK7iUqowfI2OCkvyX20iivtU0dqpOtMuNxjwzU3ywJplliJQbmVhk9YTRc6EtAyhebq61g0a1JYTiT3DfbY9d9Q8uAFg93H0uzgzhimDQ==
+     code : |1+
+      
+      HCréationSiInexistant("*")
+      
+      // Utilisateur en cours
+      gnIDUtilisateurEnCours est un entier 
+      
+      // Préférences de navigation
+      gbForceNavigateurStandard est un booleén
+      
+      // Edition
+      gsBrouillon est une chaine
+      gnIDMessageEnCours est un entier
+      
+      // Upload
+      gsRepUploads 				est une chaine = fRepWeb() + [fsep] + "uploads"
+      gsRepUploadsNavigateur 		est une chaine = "uploads"
+      gtabFichiersJoints 			est un tableau de chaine
+      
+      si pas fRépertoireExiste(gsRepUploads) ALORS
+      	fRepCrée(gsRepUploads)
+      FIN
+      
+      // Contexte
+      ConfigureContexteAWP(ctxDisque)
+      DéclareContexteAWP(gbForceNavigateurStandard,gnIDUtilisateurEnCours,gtabFichiersJoints,gsBrouillon,gnIDMessageEnCours)
+     type : 196608
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : Site
+     identifier : 0x43995cb60003b6b8
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

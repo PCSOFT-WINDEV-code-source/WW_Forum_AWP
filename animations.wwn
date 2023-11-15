@@ -1,0 +1,164 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : animations
+ major_version : 28
+ minor_version : 0
+ type : 65539
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x139af3bd0053a6f0
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 41
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACdjNDkDomX0eZ7FzlFKLLnkx7nRNcNMjRTUMkjNOUU5+OpyJUEO+w7uHBWNu5IZ/rVw0i1ibtEp7mwRXoXXiVYfzl0g2U28JX/BrdgHnP0ZkJxL8lFmhLOQvKEOFjU7Hl1kzJwn5o4QPcTBA8IajYiLnJCK0YgVGk7FbPly39+XdvjK9BJIhNX5TPMS+IGl2bu5q93vGJlB4jaHS93kIAzUbea+SpQcgi7EXcYqQY2vKP4lIT0fPJn02irm6lL9od0jpI=
+     code : |1+
+      
+      
+      // Liste des animations
+      
+      
+      bounce est une chaine = "bounce"
+      flash est une chaine = "flash"
+      pulse est une chaine = "pulse"
+      rubberBand  est une chaine = "rubberBand"
+      shake  est une chaine = "shake"
+      swing  est une chaine = "swing"
+      tada  est une chaine = "tada"
+      wobble  est une chaine = "wobble"
+      // bounce entrances
+      bounceIn  est une chaine = "bounceIn"
+      bounceInDown  est une chaine = "bounceInDown"
+      bounceInLeft  est une chaine = "bounceInLeft"
+      bounceInRight  est une chaine = "bounceInRight"
+      bounceInUp  est une chaine = "bounceInUp"
+      // bounce exits
+      bounceOut  est une chaine = "bounceOut"
+      bounceOutDown  est une chaine = "bounceOutDown"
+      bounceOutLeft  est une chaine = "bounceOutLeft"
+      bounceOutRight  est une chaine = "bounceOutRight"
+      bounceOutUp  est une chaine = "bounceOutUp"
+      // fade entrances
+      fadeIn  est une chaine = "fadeIn"
+      fadeInDown  est une chaine = "fadeInDown"
+      fadeInDownBig  est une chaine = "fadeInDownBig"
+      fadeInLeft  est une chaine = "fadeInLeft"
+      fadeInLeftBig  est une chaine = "fadeInLeftBig"
+      fadeInRight  est une chaine = "fadeInRight"
+      fadeInRightBig  est une chaine = "fadeInRightBig"
+      fadeInUp  est une chaine = "fadeInUp"
+      fadeInUpBig  est une chaine = "fadeInUpBig"
+      // fade exits
+      fadeOut  est une chaine = "fadeOut"
+      fadeOutDown  est une chaine = "fadeOutDown"
+      fadeOutDownBig  est une chaine = "fadeOutDownBig"
+      fadeOutLeft  est une chaine = "fadeOutLeft"
+      fadeOutLeftBig  est une chaine = "fadeOutLeftBig"
+      fadeOutRight  est une chaine = "fadeOutRight"
+      fadeOutRightBig  est une chaine = "fadeOutRightBig"
+      fadeOutUp  est une chaine = "fadeOutUp"
+      fadeOutUpBig  est une chaine = "fadeOutUpBig"
+      // flippers
+      flip  est une chaine = "flip"
+      flipInX  est une chaine = "flipInX"
+      flipInY  est une chaine = "flipInY"
+      flipOutX  est une chaine = "flipOutX"
+      flipOutY  est une chaine = "flipOutY"
+      // Lightspeed
+      lightSpeedIn  est une chaine = "lightSpeedIn"
+      lightSpeedOut  est une chaine = "lightSpeedOut"
+      // Rotating entrances
+      rotateIn  est une chaine = "rotateIn"
+      rotateInDownLeft  est une chaine = "rotateInDownLeft"
+      rotateInDownRight  est une chaine = "rotateInDownRight"
+      rotateInUpLeft  est une chaine = "rotateInUpLeft"
+      rotateInUpRight  est une chaine = "rotateInUpRight"
+      // Rotating exits
+      rotateOut  est une chaine = "rotateOut"
+      rotateOutDownLeft  est une chaine = "rotateOutDownLeft"
+      rotateOutDownRight  est une chaine = "rotateOutDownRight"
+      rotateOutUpLeft  est une chaine = "rotateOutUpLeft"
+      rotateOutUpRight  est une chaine = "rotateOutUpRight"
+      // Sliders
+      slideInDown  est une chaine = "slideInDown"
+      slideInLeft  est une chaine = "slideInLeft"
+      slideInRight  est une chaine = "slideInRight"
+      slideOutLeft  est une chaine = "slideOutLeft"
+      slideOutRight  est une chaine = "slideOutRight"
+      slideOutUp  est une chaine = "slideOutUp"
+      // Specials
+      hinge  est une chaine = "hinge"
+      rollIn  est une chaine = "rollIn"
+      rollOut  est une chaine = "rollOut"
+      
+     type : 983040
+     role : N
+   -
+     type : 983042
+     role : N
+  procedures :
+   -
+     name : Anime
+     internal_properties : CAAAAAgAAABnQAUmDuqoSJgw+zFeIOujUfN7QLMj/++9nOs4dHT2O16lt8XeGUt4TlFE/ZaEuyTGnTCCqMdWLNPx4VPEww==
+     procedure_id : 1412709426213988080
+     type_code : 15
+     code : |1-
+      
+      // Anime un champ
+      function Anime(sChamp,sAnimation){
+      
+      	sChamp = '#' + sChamp;
+      	
+      	$(sChamp).addClass('animated');
+      	
+      	
+      	if ($(sChamp).hasClass(sAnimation)) {
+      		$(sChamp).removeClass(sAnimation);
+      		
+      		setTimeout(function(){
+      			$(sChamp).addClass(sAnimation);
+      		},1);
+      	}
+      	else{
+      		$(sChamp).addClass(sAnimation);
+      	}
+      
+      	
+      }
+     language : JS
+     type : 458752
+     role : N
+   -
+     name : ArreteAnimation
+     internal_properties : CAAAAAgAAAC1pP1MTuZuYwdApVtNohPS72INFId07E+NM4aviCiIxgjnwpl/rGm6b3WseplNnwUELcdcdVMn6hCKtiY5OzRzR7e1
+     procedure_id : 1413862079502022653
+     type_code : 15
+     code : |1+
+      
+      // Résumé : Arrête une animation
+      // 
+      function ArreteAnimation(sChamp,sAnimation){
+      	
+      	sChamp = '#' + sChamp;
+      	
+      	if ($(sChamp).hasClass(sAnimation)) {
+      		$(sChamp).removeClass(sAnimation);
+      	}
+      }
+     language : JS
+     type : 458752
+     role : N
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : NAV_SansNom1
+resources :
+ string_res :
+  identifier : 0x1fbe16a2005991b9
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,301 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_Outils
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x139ee66f0036f674
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : FormateChainePourURL
+     procedure_id : 1413820723230083915
+     type_code : 15
+     code : |1-
+      // Résumé : Formate une chaine pour l'URL rewriting
+      // Syntaxe :
+      //[ <Résultat> = ] FormateChainePourURL (<sChaine> est chaîne)
+      //
+      // Paramètres :
+      //	sChaine (chaîne ANSI) : Chaine à formater
+      // Valeur de retour :
+      // 	chaîne ANSI : La chaine formatée
+      //
+      PROCEDURE FormateChainePourURL(sChaine est une chaine)
+      
+      sChaineFormatée est une chaine
+      
+      sChaineFormatée = SansEspace(SansAccent(sChaine))
+      sChaineFormatée = Remplace(sChaineFormatée," ","_")
+      sChaineFormatée = Remplace(sChaineFormatée,"#","")
+      sChaineFormatée = Remplace(sChaineFormatée,"-","")
+      sChaineFormatée = Remplace(sChaineFormatée,"%","")
+      sChaineFormatée = Remplace(sChaineFormatée,"?","")
+      sChaineFormatée = Remplace(sChaineFormatée,"&","")
+      
+      sChaineFormatée = URLEncode(sChaineFormatée)
+      
+      renvoyer sChaineFormatée
+     type : 458752
+   -
+     name : Ellipse
+     procedure_id : 1414200222337877978
+     type_code : 15
+     code : |1-
+      // Résumé : Ellipse une chaine
+      // Syntaxe :
+      //[ <Résultat> = ] Ellipse (<sChaine> est chaîne, <nNbCaractèresAConserver> est entier)
+      //
+      // Paramètres :
+      //	sChaine (chaîne ANSI) : <indiquez ici le rôle de sChaine>
+      //	nNbCaractèresAConserver (entier) : <indiquez ici le rôle de nNbCaractèresAConserver>
+      // Valeur de retour :
+      // 	chaîne ANSI : // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE Ellipse(local sChaine est une chaine, nNbCaractèresAConserver est un entier)
+      
+      SI Taille(sChaine) > nNbCaractèresAConserver ALORS
+      	sChaine = sChaine [[A nNbCaractèresAConserver]] + "..."
+      FIN
+      
+      renvoyer sChaine
+     type : 458752
+   -
+     name : SessionSMTP
+     procedure_id : 1470919641975338752
+     type_code : 15
+     code : |1+
+      // Résumé : Configure l'envoi d'EMail
+      //
+      PROCEDURE SessionSMTP()
+      
+      MaSession est un EmailSessionSMTP
+      
+      EmailChangeTimeOut(10) //1 min de Time-Out
+      
+      // Utilisation d'un serveur SMTP
+      // Paramétrage de la session
+      MaSession.AdresseServeur = ChargePref(SMTP_ADRESSE_SERVEUR)
+      MaSession.Nom = ChargePref(SMTP_UTILISATEUR)
+      MaSession.MotDePasse = ChargePref(SMTP_MOTDEPASSE,"",Vrai)
+      MaSession.Option = ChargePref(SMTP_OPTION,""+emailOptionDéfaut )
+      MaSession.Port = ChargePref(SMTP_PORT,"25")
+      
+      renvoyer MaSession
+      
+     type : 458752
+   -
+     name : FormateDateHeure
+     internal_properties : CAAAAAgAAACtPnZuv7SZo4nu5NiWQqCsD1Kbh2gw5Ek5oz55bXRzD5ZiqKBv+bHH02wgs/4xiV882WqTpZbyRxA869pZHHl0V8yhfxdiGE15Py/QekSuefdcPGpyn6UL6H9bhudFyaCq1Vf2/rJiuc6Te90kU3gVOqzDb0D0zc6klyEMw+RogWg/jizMCfvPCraOJV/06OeLXgbCILCe0JBprCnKYJyYlMfuIvZobY3TdXUmlkps2pfTADc=
+     procedure_id : 1471028755622152140
+     type_code : 15
+     code : |1-
+      // Résumé : Formate une DateHeure
+      // Syntaxe :
+      //[ <Résultat> = ] FormateDateHeure (<dhDateHeure> est dateheure)
+      //
+      // Paramètres :
+      //	dhDateHeure (dateheure) : La DateHeure à formater
+      // Valeur de retour :
+      // 	chaîne ANSI : // 	Aucune
+      //
+      PROCEDURE FormateDateHeure(LOCAL dhDateHeure est une dateheure)
+      
+       renvoyer DateVersChaîne(dhDateHeure..PartieDate,"JJ Mmmm AAAA - ") + HeureVersChaîne(dhDateHeure..PartieHeure,"HH:MM")
+     type : 458752
+   -
+     name : MiseEnEvidence
+     internal_properties : CAAAAAgAAACqxU9WQfxVqG1XqzZ6A0dA56VvB1L7OzEwXu1JWSbI2gSc9NiM5u4VHE28UTIxoxVHeOB6pMqpJHYvDFaWxDKOTQQN0TrkbhoD8Er14aI3/Tw+R3rVaRxPLuFHnD8d76rSVccq1BTEE5QVXdW65VprbpD/006WZWbMhxsOLUKeu5wiMbL8qN9mLRAPzGXSA42rZtZ2mjcne6+8ZUotBVeIpJwn0A==
+     procedure_id : 1471375479758198144
+     type_code : 15
+     code : |1+
+      
+      
+      // Résumé : Met en évidence des mots dans un texte
+      // Syntaxe :
+      //[ <Résultat> = ] MiseEnEvidence (<sTexte> est chaîne, <tabMotsEvidence> est tableau [, <bHTML> est booléen [, <nPosSurbPremier> est entier]])
+      //
+      // Paramètres :
+      //	sTexte (chaîne ANSI) : Texte source
+      //	tabMotsEvidence (tableau) : Mots à mettre en évidence
+      //	bHTML (booléen - valeur par défaut=0) : Vrai si le texte source est en HTML, Faux sinon
+      //	nPosSurbPremier (entier - valeur par défaut=0) : <indiquez ici le rôle de nPosSurbPremier>
+      // Valeur de retour :
+      // 	chaîne ANSI : Texte modifié en HTML avec les mots mis en évidence
+      //
+      PROCEDURE MiseEnEvidence(LOCAL sTexte est une chaîne, tabMotsEvidence est un tableau de * chaînes, LOCAL bHTML est un booléen = Faux, nPosSurbPremier est un entier = 0) : chaîne
+      
+      sTexteEvidence 		est une chaîne
+      nPosition	  		est un entier
+      nPositionPrécédente	est un entier
+      nTaille				est un entier
+      nIndice				est un entier
+      sCouleurFond		est une chaîne
+      sCouleurTexte		est une chaîne
+      cCouleurFond		est une Couleur
+      bPremier			est un booléen = Vrai
+      
+      
+      // RAZ
+      nPosSurbPremier = 0
+      
+      // On ne traite pas les chaînes vides
+      SI sTexte = "" ALORS RENVOYER ""
+      
+      // Mode HTML
+      SI bHTML ALORS
+      	
+      	nPositionPrécédente = 1
+      	nPosition = Position(sTexte, ">")
+      	TANTQUE nPosition > 0
+      		
+      		// Ajoute le texte ignoré
+      		sTexteEvidence += sTexte[[nPositionPrécédente A nPosition]]
+      		
+      		nPositionPrécédente = nPosition + 1
+      		nPosition = Position(sTexte, "<", nPositionPrécédente)
+      		SI nPosition = 0 ALORS 
+      			nPositionPrécédente --
+      			SORTIR
+      		FIN
+      		
+      		SI bPremier ALORS
+      			nPosSurbPremier = Taille(sTexteEvidence) + 1
+      			bPremier = Faux
+      		FIN
+      		
+      		// Met en évidence le texte
+      		sTexteEvidence += MiseEnEvidence(HTMLVersTexte(sTexte[[nPositionPrécédente A nPosition - 1]]), tabMotsEvidence, Faux)
+      		
+      		// Prochaine fermeture de balise
+      		nPositionPrécédente = nPosition
+      		nPosition = Position(sTexte, ">", nPositionPrécédente + 1)
+      	FIN
+      	
+      	// Ajoute le texte ignoré
+      	sTexteEvidence += sTexte[[nPositionPrécédente A]]
+      SINON
+      	
+      	nPositionPrécédente = 1
+      	nPosition = Position(sTexte, tabMotsEvidence, 1, SansCasse + MotComplet)
+      	TANTQUE nPosition > 0
+      		
+      		// Ajoute le texte ignoré
+      		sTexteEvidence += TexteVersHTML(sTexte[[nPositionPrécédente A nPosition - 1]])
+      		
+      		// Taille du mot
+      		nTaille = ChaîneCommencePar(sTexte[[nPosition A]], tabMotsEvidence, ccSansAccent + ccSansCasse)
+      		SI nTaille > 0 ALORS
+      			
+      			// Mot trouvé
+      			nIndice = Cherche(tabMotsEvidence, tcLinéaire + tccSansAccent + tccSansCasse, sTexte[[nPosition sur nTaille]])
+      			SI nIndice > 0 ALORS
+      				
+      				// Couleur de fond
+      				cCouleurFond	= DonneCouleur(1 + nIndice)
+      				cCouleurFond..Luminosité += 10
+      				sCouleurFond 	= RVBVersHTML(cCouleurFond)
+      				
+      				// Couleur du texte 
+      				SI CouleurLuminosité(cCouleurFond) > 50 ALORS
+      					// Foncé
+      					cCouleurFond = TSL(CouleurTeinte(cCouleurFond), CouleurSaturation(cCouleurFond), CouleurLuminosité(cCouleurFond) * 0.3)
+      				SINON
+      					// Clair
+      					cCouleurFond = TSL(CouleurTeinte(cCouleurFond), CouleurSaturation(cCouleurFond), 95)
+      				FIN
+      				sCouleurTexte	= RVBVersHTML(cCouleurFond)
+      				
+      				SI bPremier ALORS
+      					nPosSurbPremier = Taille(sTexteEvidence) + 1
+      					bPremier = Faux
+      					
+      					sTexteEvidence += ChaîneConstruit([
+      						<span style="background-color: %1; color: %2" class="first">%3</span>
+      					], sCouleurFond, sCouleurTexte, TexteVersHTML(sTexte[[nPosition sur nTaille]]))
+      				SINON
+      					sTexteEvidence += ChaîneConstruit([
+      						<span style="background-color: %1; color: %2">%3</span>
+      					], sCouleurFond, sCouleurTexte, TexteVersHTML(sTexte[[nPosition sur nTaille]]))
+      				FIN
+      				
+      			SINON
+      				sTexteEvidence += TexteVersHTML(sTexte[[nPosition sur nTaille]])
+      			FIN
+      			
+      			nPositionPrécédente = nPosition + nTaille
+      		SINON
+      			nPositionPrécédente = nPosition
+      			nPosition += 1
+      		FIN
+      		
+      		SI nPosition + nTaille > Taille(sTexte) ALORS SORTIR
+      		nPosition = Position(sTexte, tabMotsEvidence, nPosition + nTaille, SansCasse + MotComplet)
+      	FIN
+      	
+      	// Ajoute le texte ignoré
+      	sTexteEvidence += TexteVersHTML(sTexte[[nPositionPrécédente A]])
+      FIN
+      RENVOYER sTexteEvidence
+      
+     type : 458752
+   -
+     name : ParseMessage
+     internal_properties : CAAAAAgAAABi5GQs7pVO/GownsWSo2P9vDoqfJ8R0M6CXt6TvinPrBkh8tN4xFJfDrLjOb8/hfEHx+9F07sUmScXYofhg2ii6OSTetmbfc3kNdJFuVFC5hcd4Jx0EZBurH/Ji07AlmpH8WcMV3kagfdubEvy+JI6ZqRyYFHpOWAiQZaik9dlTO3L6rRufMLVveTNmmkJO+OEXsxIvjzdC+0ToJybR4ZaF8zFWDtuoL3zeNr7ufs0Kne4304H6cgNVj6UYrs6iN88W8F7Y9f5GPxXBmewWNRYonmEJ+NCfRDL6kMUUYd9Pjdjf6a7LLJyG6prZs22xUEk/U5PkWXWiVckmiDx59ZHWIZVu9rI1vItGHkbluGVfGAbKKg0GT7MD9M6fAAOMfjOA/S137i3S5PR6JJbBTqRcfE=
+     procedure_id : 1471730952693742733
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] ParseMessage (<sContenu> est chaîne)
+      //
+      // Paramètres :
+      //	sContenu (chaîne ANSI) : Contenu texte à parser
+      // Valeur de retour :
+      // 	chaîne ANSI : Message complet formaté
+      //
+      PROCEDURE ParseMessage(sContenu est une chaine)
+      // Formatage
+      sContenuParsé est une chaine = sContenu
+      
+      // EMOTICONES **********************************************************
+      sContenuParsé = Remplace(sContenuParsé, "<_<", 		"<img src=""/" + RépertoireWeb() + "/images/smileys/dry.gif"" width=""20"" height=""20"" alt=""<_<"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ":(", 		"<img src=""/" + RépertoireWeb() + "/images/smileys/sad.gif"" width=""20"" height=""20"" alt="":("" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ":)", 		"<img src=""/" + RépertoireWeb() + "/images/smileys/smile.gif"" width=""20"" height=""20"" alt="":)"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ":D", 		"<img src=""/" + RépertoireWeb() + "/images/smileys/biggrin.gif"" width=""20"" height=""20"" alt="":D"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ":P", 		"<img src=""/" + RépertoireWeb() + "/images/smileys/tongue.gif"" width=""20"" height=""20"" alt="":P"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ":angry:", 	"<img src=""/" + RépertoireWeb() + "/images/smileys/mad.gif"" width=""20"" height=""20"" alt="":angry:"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ":blink:", 		"<img src=""/" + RépertoireWeb() + "/images/smileys/blink.gif"" width=""20"" height=""20"" alt="":blink:"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ":huh:", 		"<img src=""/" + RépertoireWeb() + "/images/smileys/huh.gif"" width=""20"" height=""20"" alt="":huh:"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ":lol:", 		"<img src=""/" + RépertoireWeb() + "/images/smileys/laugh.gif"" width=""20"" height=""20"" alt="":lol:"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ":o", 		"<img src=""/" + RépertoireWeb() + "/images/smileys/ohmy.gif"" width=""20"" height=""20"" alt="":o"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ":ph34r:", 	"<img src=""/" + RépertoireWeb() + "/images/smileys/ph34r.gif"" width=""20"" height=""20"" alt="":ph34r:"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ":rolleyes:", 	"<img src=""/" + RépertoireWeb() + "/images/smileys/rolleyes.gif"" width=""20"" height=""20"" alt="":rolleyes:"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ":unsure:", 	"<img src=""/" + RépertoireWeb() + "/images/smileys/unsure.gif"" width=""20"" height=""20"" alt="":unsure:"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, ";)", 		"<img src=""/" + RépertoireWeb() + "/images/smileys/wink.gif"" width=""20"" height=""20"" alt="";)"" align=""absmiddle"">", MotComplet)
+      sContenuParsé = Remplace(sContenuParsé, "B)", 		"<img src=""/" + RépertoireWeb() + "/images/smileys/cool.gif"" width=""20"" height=""20"" alt=""B)"" align=""absmiddle"">", MotComplet)
+      
+      RENVOYER sContenuParsé
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x1fbe16a100108d73
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
